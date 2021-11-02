@@ -1,34 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 .container{
-    width: 1000px;
+    width: 80%;
+    max-width: 1000px;
     margin: auto;
     position: relative;
+    margin-top: 20px;
 }
 
-.row-1{
-    position: absolute;
-    top: 0;
-}
-
-.row-2{
-    position: absolute;
-    top: 480px;
+.row{
+    margin-bottom: 40px;;
 }
 
 .box-photo img{
-    height: 400px;
+    height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
 .box-left, .box-central, .box-right{
     float: left;
-    width: 33%;
+    width: 32%;
 }
 
 .clearfix::after{
@@ -38,7 +36,7 @@
 }
 
 .box-central{
-    margin: 0 0.5%;
+    margin: 0 2%;
 }
 
 .box-photo{
@@ -51,7 +49,7 @@
     height: 25px;
     background-color: rgb(255, 255, 255);
     right: 0;
-    top: 10px;
+    top: 20px;
     text-align: center;
 }
 
@@ -61,15 +59,22 @@
     line-height: 25px;
 }
 
-.discount-50{
+.discount-30, .discount-50{
     position: absolute;
     background-color: rgb(235, 0, 55);
     left: 0;
-    bottom: 15px;
+    bottom: 20px;
 }
 
 .discount-50::after{
     content: "-50%";
+}
+
+.discount-30::after{
+    content: "-30%";
+}
+
+.discount-30::after, .discount-50::after{
     font-size: 11px;
     height: 20px;
     line-height: 20px;
@@ -81,45 +86,18 @@
 .sostenibilità{
     position: absolute;
     background-color: rgb(0, 135, 90);
-    bottom: 15px;
+    bottom: 20px;
     left: 35px;
-}
-
-.sostenibilità::after{
-    content: "Sostenibilità";
-    font-size: 11px;
-    height: 20px;
-    line-height: 20px;
-    padding: 3px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-.discount-30{
-    position: absolute;
-    background-color: rgb(235, 0, 55);
-    left: 0;
-    bottom: 15px;
-}
-
-.discount-30::after{
-    content: "-30%";
-    font-size: 11px;
-    height: 20px;
-    line-height: 20px;
-    padding: 3px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
 }
 
 .sostenibilità-2{
     position: absolute;
     background-color: rgb(0, 135, 90);
-    bottom: 15px;
+    bottom: 20px;
     left: 0;
 }
 
-.sostenibilità-2::after{
+.sostenibilità::after, .sostenibilità-2::after{
     content: "Sostenibilità";
     font-size: 11px;
     height: 20px;
@@ -129,44 +107,44 @@
     font-weight: bold;
 }
 
-.brand{
+.brand, .price{
     font-size: 12px;
 }
 
 .model{
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .price{
-    font-size: 12px;
-}
-
-.discounted-price{
     color: rgb(255, 0, 0);
     font-weight: bold;
 }
 
-.previous-price{
+.previous-price::after{
+    content: "29,99 €";
     text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
-.image-1 {
+.image-1{
     display: block;
 }
 
-.image-2 {
+.image-2{
     display: none;
 }
 
-.cambio-immagine {
-}
-
-.cambio-immagine:hover .image-1 {
+.cambio-immagine:hover .image-1{
    display: none;
 }
 
-.cambio-immagine:hover .image-2 {
+.cambio-immagine:hover .image-2{
    display: block;
+}
+
+.favorite:hover{
+    color: rgb(255, 0, 0);
 }
