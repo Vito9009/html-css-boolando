@@ -41,3 +41,90 @@
     margin: 0 15px;
 }
 
+.box-photo{
+    position: relative;
+}
+
+.favorite{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+
+.favorite::after{
+    content: "\2665";
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.discount-50{
+    position: absolute;
+    background-color: red;
+    left: 0;
+    bottom: 15px;
+}
+
+.discount-50::after{
+    content: "-50%";
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.sostenibilità{
+    position: absolute;
+    background-color: green;
+    bottom: 15px;
+    left: 35px;
+}
+
+.sostenibilità::after{
+    content: "Sostenibilità";
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.discount-30{
+    position: absolute;
+    background-color: red;
+    left: 0;
+    bottom: 15px;
+}
+
+.discount-30::after{
+    content: "-30%";
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.sostenibilità-2{
+    position: absolute;
+    background-color: green;
+    bottom: 15px;
+    left: 0;
+}
+
+.sostenibilità-2::after{
+    content: "Sostenibilità";
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
