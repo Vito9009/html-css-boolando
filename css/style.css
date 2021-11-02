@@ -17,7 +17,7 @@
 
 .row-2{
     position: absolute;
-    top: 440px;
+    top: 480px;
 }
 
 .box-photo img{
@@ -128,3 +128,27 @@
     color: white;
     font-weight: bold;
 }
+
+.brand{
+    font-size: 12px;
+}
+
+.model{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price{
+    font-size: 12px;
+}
+
+.discounted-price{
+    color: red;
+    font-weight: bold;
+}
+
+.previous-price{
+    text-decoration: line-through;
+}
+
