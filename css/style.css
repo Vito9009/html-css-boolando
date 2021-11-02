@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.row-1{
+    position: absolute;
+    top: 0;
+}
+
+.row-2{
+    position: absolute;
+    top: 440px;
+}
+
+.box-photo img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.box-left, .box-central, .box-right{
+    float: left;
+    width: 32%;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box-central{
+    margin: 0 15px;
+}
+
